@@ -1,0 +1,27 @@
+﻿GET https://localhost:7218/movies
+
+###
+GET https://localhost:7218/movies/9
+
+###
+POST https://localhost:7218/movies
+Content-Type:application/json
+
+{
+  "Name": "",
+  "Price": 30,
+  "ReleaseDate": "2003-03-31",
+  "GenreId": 2
+}
+
+###
+PUT https://localhost:7218/movies/7
+Content-Type:application/json
+
+{
+  "Name": "Quantum Loop",
+  "Price": 35
+}
+
+###
+DELETE https://localhost:7218/movies/7
