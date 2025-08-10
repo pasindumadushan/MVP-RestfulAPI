@@ -33,6 +33,7 @@ namespace MovieAPI
 
             app.MapGet("/", () => "Hello World!");
             app.MapMoviesEndpoints();
+            app.MapGenresEndpoints();
             app.Run();
         }
     }
